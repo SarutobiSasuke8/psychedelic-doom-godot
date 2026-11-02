@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <rect width="128" height="128" fill="#1a0a2e"/>
+  <circle cx="64" cy="50" r="25" fill="#ff6b9d"/>
+  <circle cx="55" cy="45" r="6" fill="white"/>
+  <circle cx="73" cy="45" r="6" fill="white"/>
+  <circle cx="55" cy="45" r="3" fill="black"/>
+  <circle cx="73" cy="45" r="3" fill="black"/>
+  <path d="M50 70 Q64 85 78 70" stroke="#00ffaa" stroke-width="3" fill="none"/>
+  <text x="64" y="110" text-anchor="middle" fill="#00ffaa" font-size="12" font-family="monospace">GOOGLY</text>
+</svg>
