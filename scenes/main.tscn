@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://mainscene"]
+[gd_scene load_steps=5 format=3 uid="uid://mainscene"]
 
 [ext_resource type="Script" path="res://scripts/systems/game_manager.gd" id="1_game"]
 [ext_resource type="PackedScene" path="res://scenes/player/player.tscn" id="2_player"]
 [ext_resource type="PackedScene" path="res://scenes/enemies/googly_alien.tscn" id="3_enemy"]
+[ext_resource type="PackedScene" path="res://scenes/ui/hud.tscn" id="4_hud"]
 
 [node name="Main" type="Node3D"]
 
@@ -21,7 +22,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 
 [node name="Floor" type="CSGBox3D" parent="."]
 size = Vector3(40, 1, 40)
-material_override = null
 
 [node name="WallNorth" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, -20)
@@ -44,3 +44,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 1, -8)
 
 [node name="GooglyAlien2" parent="." instance=ExtResource("3_enemy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 1, 6)
+
+[node name="HUD" parent="." instance=ExtResource("4_hud")]
