@@ -72,6 +72,6 @@ func take_damage(amount: int) -> void:
 
 func die() -> void:
 	print("You died! Restarting...")
-	if game_manager and game_manager.has_method("player_died"):
-		game_manager.player_died()
+	if game_manager and game_manager.has_method("on_player_died"):
+		game_manager.on_player_died()
 	get_tree().reload_current_scene()

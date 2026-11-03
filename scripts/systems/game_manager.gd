@@ -17,6 +17,6 @@ func add_score(amount: int) -> void:
 	score_changed.emit(score)
 	print("Score: ", score)
 
-func player_died() -> void:
+func on_player_died() -> void:
 	player_died.emit()
 	print("Player died.")
