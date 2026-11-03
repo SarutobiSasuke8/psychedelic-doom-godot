@@ -6,45 +6,47 @@
 - [x] Modular weapon + enemy bases
 - [x] Game manager
 - [x] Input mapping
-- [x] README + roadmap
 
-## Phase 1: Core Gameplay Loop ✅ (Playable Vertical Slice)
+## Phase 1: Core Gameplay Loop ✅
 - [x] Working hitscan weapon
-- [x] Enemy AI (idle / chase / attack)
-- [x] Damage + health systems
-- [x] Death + restart
-- [x] Score
-- [x] Basic HUD
-- [x] Enclosed playable arena with enemies
+- [x] Enemy AI
+- [x] Health, score, HUD, death/restart
+- [x] Playable arena
 
-**Milestone achieved**: You can move, shoot, kill enemies, take damage, and die.
+## Phase 2: Pixel Art Pipeline ✅ (Current)
+- [x] Locked 480×270 viewport
+- [x] Nearest filtering + integer scaling
+- [x] Pixel art consistency guide (`PIXEL_ART.md`)
+- [x] Assets folder structure
+- [x] Enemy prepared for billboarded pixel sprites
 
-## Phase 2: Psychedelic & Weird Layer (Next)
-- [ ] Googly eye materials / shaders on enemies
-- [ ] Screen warp / chromatic aberration post-processing
+## Phase 3: Psychedelic & Weird Layer (Next)
+- [ ] Actual pixel art enemy sprites (googly aliens)
+- [ ] Pixel wall/floor textures
+- [ ] Screen warp / chromatic aberration
 - [ ] Weapon muzzle flash + hit effects
 - [ ] First absurd weapon variant
-- [ ] Enemy death particles / googly explosion
-- [ ] Simple sound effects framework
+- [ ] Death particles
 
-## Phase 3: Content & Polish
+## Phase 4: Content & Polish
 - [ ] Modular level pieces
-- [ ] 3–5 unique enemy types
+- [ ] Multiple enemy types
 - [ ] Weapon switching
-- [ ] Pickups (health, ammo)
+- [ ] Pickups
 - [ ] Full UI polish
 - [ ] Music & SFX
 
-## Phase 4: Browser & Distribution
+## Phase 5: Browser & Distribution
 - [ ] HTML5 export optimization
 - [ ] Performance pass
-- [ ] RokumonGames.com integration notes
+- [ ] RokumonGames.com notes
 
 ## Design Pillars
 1. Fast & Responsive gunplay
-2. Weird First — psychedelic / absurd twists on every system
-3. Quirky googly sci-fi aliens
-4. Modular and reskinnable
-5. Browser ready
+2. Weird First
+3. Consistent pixel art (480×270)
+4. Quirky googly sci-fi aliens
+5. Modular and reskinnable
+6. Browser ready
 
 This is a living document.
