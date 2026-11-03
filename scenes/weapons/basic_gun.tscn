@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://basicgun"]
+
+[ext_resource type="Script" path="res://scripts/weapons/weapon_base.gd" id="1_weapon"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_1"]
+size = Vector3(0.15, 0.15, 0.6)
+
+[node name="BasicGun" type="Node3D"]
+script = ExtResource("1_weapon")
+weapon_name = "Googly Blaster"
+damage = 25
+fire_rate = 0.12
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_1")
