@@ -1,23 +1,28 @@
 # Psychedelic Doom Godot Framework
 
-A strong, modular Godot 4 template for a **psychedelic, weird, Rick & Morty-inspired Doom-like FPS** with googly quirky sci-fi aliens.
+A strong, modular Godot 4 template for a **psychedelic, weird, Rick & Morty-inspired Doom-like FPS** with googly quirky sci-fi aliens and a consistent **pixel art** style.
 
-### Current Status: Playable Vertical Slice
+### Current Status: Playable Vertical Slice + Pixel Pipeline
 - Fast Doom-style movement + mouse look
-- Working hitscan weapon (left click to shoot)
-- Enemy AI that chases and attacks
-- Player health + death/restart
-- Score system
-- Basic HUD
-- Enclosed arena with two googly aliens
+- Working hitscan weapon
+- Enemy AI (chase + attack)
+- Health, score, HUD, death/restart
+- **480×270 pixel-perfect viewport** with nearest filtering
+- Integer scaling for crisp pixels
+- Pixel art consistency guide
 
 **You can play it right now.** Open in Godot 4.3+ and hit Play.
 
+### Pixel Art Decision
+**Locked resolution: 480 × 270**
+
+See `PIXEL_ART.md` for the full pipeline and rules.
+
 ### Vision
-- Classic Doom/Wolfenstein feel
-- Extremely whacky, psychedelic aesthetics (warping shaders, googly eyes, reality-breaking effects)
+- Classic Doom/Wolfenstein feel with modern pixel-art polish
+- Extremely whacky, psychedelic aesthetics
 - Quirky sci-fi aliens with googly eyes
-- Rick & Morty vibes: absurd humor, interdimensional nonsense
+- Rick & Morty vibes
 - Easy to reskin — strong template architecture
 
 **Target**: Browser-friendly export (HTML5) for RokumonGames.com, plus desktop.
@@ -35,29 +40,15 @@ A strong, modular Godot 4 template for a **psychedelic, weird, Rick & Morty-insp
 ├── project.godot
 ├── README.md
 ├── ROADMAP.md
+├── PIXEL_ART.md
 ├── scenes/
-│   ├── main.tscn
-│   ├── player/
-│   ├── enemies/
-│   ├── weapons/
-│   └── ui/
 ├── scripts/
-│   ├── player/
-│   ├── weapons/
-│   ├── enemies/
-│   ├── systems/
-│   └── ui/
-└── assets/ (for future art/shaders)
+└── assets/
+    ├── textures/
+    └── sprites/
 ```
 
-## Why This Is a Strong Template
-- Modular weapon and enemy bases (easy to extend or reskin)
-- Clear separation of player, AI, systems, and UI
-- Group-based communication
-- Ready for custom shaders and post-processing
-- Designed so you can swap meshes/materials without rewriting logic
-
-See **ROADMAP.md** for the full development plan.
+See **ROADMAP.md** and **PIXEL_ART.md** for next steps.
 
 Built for original indie games on RokumonGames.com.
 
